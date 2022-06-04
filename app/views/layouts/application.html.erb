@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <%= render 'shared/navbar' %>
     <title>AirbnbClone</title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <%= csrf_meta_tags %>
@@ -12,6 +11,7 @@
   </head>
 
   <body>
+    <%= render partial: 'shared/navbar' %>
     <%= yield %>
   </body>
 </html>

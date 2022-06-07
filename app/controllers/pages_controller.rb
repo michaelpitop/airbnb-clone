@@ -5,6 +5,7 @@ class PagesController < ApplicationController
     @listings = Listing.all
     @users = User.all
   end
+# !!!everything commenteed below is not certainly staying!!!
 
   # def new
   #   @event = Event.find(params[:event_id])

@@ -6,10 +6,20 @@ class PagesController < ApplicationController
     @users = User.all
   end
 
-  def new
-  end
+  # def new
+  #   @event = Event.find(params[:event_id])
+  #   @comment = Comment.new(comment_params)
+  # end
 
-  def create
-
-  end
+  # def create
+  #   @event = Event.find(params[:event_id])
+  #   @comment = Comment.new(comment_params)
+  #   @comment.event = @event
+  #   @comment.user = current_user
+  #   if @comment.save
+  #     redirect_to event_path(@event), notice: 'Comment was successfully created'
+  #   else
+  #     render 'events/show'
+  #   end
+  # end
 end

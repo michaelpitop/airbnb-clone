@@ -22,4 +22,19 @@ class PagesController < ApplicationController
   #     render 'events/show'
   #   end
   # end
+
+  def update
+    if @comment.update(comment_params)
+      redirect_to event_path(@event), notice: 'Comment was successfully updated'
+    else
+      render 'events/show'
+    end
+  end
+
+  def destroy
+    @comment = Comment.find(params[:id])
+    @comment.destroy
+    redirect_to event_path(@comment.event), notice: 'Comment was successfully deleted'
+  end
+
 end
